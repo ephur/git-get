@@ -1,0 +1,7 @@
+# Apache Virtual Host Entry
+# mod_proxy must be enabled/loaded
+
+Listen 4917
+<VirtualHost *:4917>
+  ProxyPass / http://localhost:4567/
+</VirtualHost>
